@@ -1,0 +1,808 @@
+2026-08-18 10:23:59,856 [DEBUG  ] Verbosite console reglee sur : Debug
+2026-08-18 10:24:08,464 [INFO   ] [TRACE] niveau = Complet (toutes les itérations)
+2026-08-18 10:24:15,104 [INFO   ] [SONDE] active = True
+2026-08-18 10:30:21,024 [INFO   ] [SONDE][accept] combo lu = '1'
+2026-08-18 10:45:08,779 [INFO   ] [SONDE][accept] combo lu = '1'
+2026-08-18 10:45:24,788 [INFO   ] [CONFIG] enregistree : /home/caracterisation/Documents/youssef/caracterisation/Interface_UI/Youssef/3C94_2026-08-18_10-45-14.cfg
+2026-08-18 10:46:31,107 [INFO   ] [SONDE][accept] combo lu = '1'
+2026-08-18 10:46:57,731 [INFO   ] [SONDE][accept] combo lu = '1'
+2026-08-18 10:47:00,155 [INFO   ] 
+================================================================================
+2026-08-18 10:47:00,157 [INFO   ] VERIFICATION PARAMÈTRES - Affichage des valeurs saisies
+2026-08-18 10:47:00,160 [INFO   ] ================================================================================
+2026-08-18 10:47:00,163 [INFO   ] 
+Paramètre            Valeur          Unité     
+2026-08-18 10:47:00,167 [INFO   ] ---------------------------------------------
+2026-08-18 10:47:00,169 [INFO   ] Hauteur              5.31            mm        
+2026-08-18 10:47:00,171 [INFO   ] Di                   13              mm        
+2026-08-18 10:47:00,173 [INFO   ] De                   22.35           mm        
+2026-08-18 10:47:00,176 [INFO   ] Section              24.82           mm²       
+2026-08-18 10:47:00,181 [INFO   ] Ns1                  10              -         
+2026-08-18 10:47:00,184 [INFO   ] Ns2                  10              -         
+2026-08-18 10:47:00,186 [INFO   ] Rs                   0.92            Ω         
+2026-08-18 10:47:00,188 [INFO   ] Rh                   0.198           Ω         
+2026-08-18 10:47:00,192 [INFO   ] Freq                 25              Hz        
+2026-08-18 10:47:00,194 [INFO   ] Ampli                0.1             V         
+2026-08-18 10:47:00,198 [INFO   ] Gain                 10              -         
+2026-08-18 10:47:00,201 [INFO   ] Nbre_periode         2               -         
+2026-08-18 10:47:00,204 [INFO   ] Nbre_enregist        10              -         
+2026-08-18 10:47:00,207 [INFO   ] mu_r                 2000            -         
+2026-08-18 10:47:00,209 [INFO   ] Kf                   1               -         
+2026-08-18 10:47:00,211 [INFO   ] num_samples          5000            -         
+2026-08-18 10:47:00,215 [INFO   ] alpha                0.5             -         
+2026-08-18 10:47:00,218 [INFO   ] beta                 0.5             -         
+2026-08-18 10:47:00,222 [INFO   ] lm                   54.21           mm        
+2026-08-18 10:47:00,225 [INFO   ] gamma                5               -         
+2026-08-18 10:47:00,228 [INFO   ] 
+--------------------------------------------------------------------------------
+2026-08-18 10:47:00,230 [INFO   ] VÉRIFICATION 1: Paramètres manquants (= 0)
+2026-08-18 10:47:00,233 [INFO   ] --------------------------------------------------------------------------------
+2026-08-18 10:47:00,235 [INFO   ] ✓ Tous les paramètres sont renseignés
+2026-08-18 10:47:00,237 [INFO   ] 
+--------------------------------------------------------------------------------
+2026-08-18 10:47:00,243 [INFO   ] VÉRIFICATION 2: Cohérence géométrique
+2026-08-18 10:47:00,245 [INFO   ] --------------------------------------------------------------------------------
+2026-08-18 10:47:00,249 [INFO   ] Di (diamètre intérieur) = 13.0 mm
+2026-08-18 10:47:00,251 [INFO   ] De (diamètre extérieur) = 22.35 mm
+2026-08-18 10:47:00,254 [INFO   ] ✓ De > Di (épaisseur tore = 9.350000000000001 mm)
+2026-08-18 10:47:00,259 [INFO   ] 
+--------------------------------------------------------------------------------
+2026-08-18 10:47:00,261 [INFO   ] VÉRIFICATION 3: Conversion facteur Sonde
+2026-08-18 10:47:00,265 [INFO   ] --------------------------------------------------------------------------------
+2026-08-18 10:47:00,267 [INFO   ] Sonde input: '1' → gain = 1.0 (pas d'atténuation)
+2026-08-18 10:47:00,270 [INFO   ] 
+--------------------------------------------------------------------------------
+2026-08-18 10:47:00,272 [INFO   ] VÉRIFICATION 4: Limite de tension du secondaire V₂
+2026-08-18 10:47:00,274 [INFO   ] --------------------------------------------------------------------------------
+2026-08-18 10:47:00,276 [INFO   ] 
+Formule de Faraday:
+2026-08-18 10:47:00,279 [INFO   ] V₂ = K × Ns2 × S(m²) × Ampli × Freq × √2 × Sonde
+2026-08-18 10:47:00,283 [INFO   ] 
+Où:
+2026-08-18 10:47:00,286 [INFO   ]   K (Faraday)     = 4.44
+2026-08-18 10:47:00,290 [INFO   ]   Ns2 (spires)    = 10
+2026-08-18 10:47:00,293 [INFO   ]   Section (mm²)   = 24.82
+2026-08-18 10:47:00,297 [INFO   ]   Section (m²)    = 2.4820000000e-05
+2026-08-18 10:47:00,299 [INFO   ]   Ampli (V)       = 0.1
+2026-08-18 10:47:00,303 [INFO   ]   Freq (saisie)   = 25.0 kHz
+2026-08-18 10:47:00,306 [INFO   ]   Freq (Hz)       = 25000.0
+2026-08-18 10:47:00,308 [INFO   ]   √2              = 1.414214
+2026-08-18 10:47:00,310 [INFO   ]   Sonde (gain)    = 1.0
+2026-08-18 10:47:00,312 [INFO   ] 
+Calcul pas à pas:
+2026-08-18 10:47:00,315 [INFO   ]   V₂ = 4.44 × 10 × 2.4820000000e-05 × 0.1 × 25000.0 × 1.414214 × 1.0
+2026-08-18 10:47:00,317 [INFO   ] 
+Vérification:
+2026-08-18 10:47:00,320 [INFO   ]   V₂ calculé = 3.896187 V
+2026-08-18 10:47:00,328 [INFO   ]   V₂ limite  = 20.0 V (limite picoscope)
+2026-08-18 10:47:00,331 [INFO   ] ✓ V₂ = 3.896 V < 20.0 V
+2026-08-18 10:47:00,334 [INFO   ]    Marge de sécurité: 80.5%
+2026-08-18 10:47:00,336 [INFO   ] 
+================================================================================
+2026-08-18 10:47:00,338 [INFO   ] BILAN : 0 erreur(s) detectee(s)
+2026-08-18 10:47:00,346 [INFO   ] ================================================================================
+2026-08-18 10:47:00,677 [DEBUG  ] ttyS4 // /dev/ttyS4 // D=n/a
+2026-08-18 10:47:00,680 [DEBUG  ] ttyS31 // /dev/ttyS31 // D=n/a
+2026-08-18 10:47:00,683 [DEBUG  ] ttyS30 // /dev/ttyS30 // D=n/a
+2026-08-18 10:47:00,686 [DEBUG  ] ttyS29 // /dev/ttyS29 // D=n/a
+2026-08-18 10:47:00,688 [DEBUG  ] ttyS28 // /dev/ttyS28 // D=n/a
+2026-08-18 10:47:00,691 [DEBUG  ] ttyS27 // /dev/ttyS27 // D=n/a
+2026-08-18 10:47:00,697 [DEBUG  ] ttyS26 // /dev/ttyS26 // D=n/a
+2026-08-18 10:47:00,700 [DEBUG  ] ttyS25 // /dev/ttyS25 // D=n/a
+2026-08-18 10:47:00,703 [DEBUG  ] ttyS24 // /dev/ttyS24 // D=n/a
+2026-08-18 10:47:00,705 [DEBUG  ] ttyS23 // /dev/ttyS23 // D=n/a
+2026-08-18 10:47:00,709 [DEBUG  ] ttyS22 // /dev/ttyS22 // D=n/a
+2026-08-18 10:47:00,712 [DEBUG  ] ttyS21 // /dev/ttyS21 // D=n/a
+2026-08-18 10:47:00,715 [DEBUG  ] ttyS20 // /dev/ttyS20 // D=n/a
+2026-08-18 10:47:00,717 [DEBUG  ] ttyS19 // /dev/ttyS19 // D=n/a
+2026-08-18 10:47:00,719 [DEBUG  ] ttyS18 // /dev/ttyS18 // D=n/a
+2026-08-18 10:47:00,723 [DEBUG  ] ttyS17 // /dev/ttyS17 // D=n/a
+2026-08-18 10:47:00,725 [DEBUG  ] ttyS16 // /dev/ttyS16 // D=n/a
+2026-08-18 10:47:00,728 [DEBUG  ] ttyS15 // /dev/ttyS15 // D=n/a
+2026-08-18 10:47:00,730 [DEBUG  ] ttyS14 // /dev/ttyS14 // D=n/a
+2026-08-18 10:47:00,734 [DEBUG  ] ttyS13 // /dev/ttyS13 // D=n/a
+2026-08-18 10:47:00,736 [DEBUG  ] ttyS12 // /dev/ttyS12 // D=n/a
+2026-08-18 10:47:00,738 [DEBUG  ] ttyS11 // /dev/ttyS11 // D=n/a
+2026-08-18 10:47:00,742 [DEBUG  ] ttyS10 // /dev/ttyS10 // D=n/a
+2026-08-18 10:47:00,745 [DEBUG  ] ttyS9 // /dev/ttyS9 // D=n/a
+2026-08-18 10:47:00,748 [DEBUG  ] ttyS8 // /dev/ttyS8 // D=n/a
+2026-08-18 10:47:00,750 [DEBUG  ] ttyS7 // /dev/ttyS7 // D=n/a
+2026-08-18 10:47:00,753 [DEBUG  ] ttyS6 // /dev/ttyS6 // D=n/a
+2026-08-18 10:47:00,756 [DEBUG  ] ttyS5 // /dev/ttyS5 // D=n/a
+2026-08-18 10:47:00,758 [DEBUG  ] ttyS3 // /dev/ttyS3 // D=n/a
+2026-08-18 10:47:00,760 [DEBUG  ] ttyS2 // /dev/ttyS2 // D=n/a
+2026-08-18 10:47:00,764 [DEBUG  ] ttyS1 // /dev/ttyS1 // D=n/a
+2026-08-18 10:47:00,766 [DEBUG  ] ttyS0 // /dev/ttyS0 // D=n/a
+2026-08-18 10:47:00,768 [WARNING] Aucun amplificateur detecte : le bouton Output est desactive et les defauts ne seront pas surveilles.
+2026-08-18 10:47:00,770 [INFO   ] mode Simple
+2026-08-18 10:47:02,275 [DEBUG  ] [init] timebase=4 dt=16.000ns spp_init=2500
+2026-08-18 10:47:02,282 [INFO   ] [SONDE] label='1' -> gain de recuperation = 1.0
+2026-08-18 10:47:02,307 [INFO   ] 📁 Logger initialisé : ./Logs/2026-08-18_10-47-02_Ferrite Mn-Zn_F25000.0Hz_B0.10T_3C94_HF
+2026-08-18 10:47:02,310 [INFO   ]    Niveau de trace : Complet (toutes les itérations)
+2026-08-18 10:47:05,382 [WARNING] [AMPLI] AUCUN amplificateur detecte : la surveillance des defauts est INACTIVE pour cette mesure.
+2026-08-18 10:47:05,929 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:07,325 [INFO   ] RMSE FFT 0.46188127516872446
+2026-08-18 10:47:07,328 [INFO   ] RMSE Savgol 1.3433412493605275
+2026-08-18 10:47:07,330 [DEBUG  ] FFT
+2026-08-18 10:47:07,354 [INFO   ] [FFT] Bin=2  Fs=-535.457800-277.811788j  Fp=-473.138638-180.437026j  |Fs|=603.236641  |Fp|=506.377025  ∠Fs=-152.578°  ∠Fp=-159.125°
+2026-08-18 10:47:07,357 [INFO   ] [SONDE-D] |Ip|/|Ish|=0.8394  Δφ=-6.547°  Idc: shunt=-31.3 mA  sonde=+60.6 mA
+2026-08-18 10:47:08,552 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:09,883 [INFO   ] RMSE FFT 1.2166953364956272
+2026-08-18 10:47:09,886 [INFO   ] RMSE Savgol 1.4820408533438718
+2026-08-18 10:47:09,890 [DEBUG  ] FFT
+2026-08-18 10:47:09,912 [INFO   ] [FFT] Bin=2  Fs=-143.576896-284.880758j  Fp=-113.342391-197.034820j  |Fs|=319.016256  |Fp|=227.308640  ∠Fs=-116.748°  ∠Fp=-119.909°
+2026-08-18 10:47:09,914 [INFO   ] [SONDE-D] |Ip|/|Ish|=0.7125  Δφ=-3.162°  Idc: shunt=-31.4 mA  sonde=+60.1 mA
+2026-08-18 10:47:11,254 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:11,284 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:11,341 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:12,589 [INFO   ] RMSE FFT 0.00674775960458431
+2026-08-18 10:47:12,593 [INFO   ] RMSE Savgol 0.2719416839265535
+2026-08-18 10:47:12,596 [DEBUG  ] FFT
+2026-08-18 10:47:12,619 [INFO   ] [FFT] Bin=2  Fs=-10935.573530-3200.038388j  Fp=-9596.670867-2856.773237j  |Fs|=11394.165793  |Fp|=10012.853992  ∠Fs=-163.689°  ∠Fp=-163.423°
+2026-08-18 10:47:12,622 [INFO   ] [SONDE-D] |Ip|/|Ish|=0.8788  Δφ=+0.267°  Idc: shunt=-31.7 mA  sonde=+60.1 mA
+2026-08-18 10:47:13,751 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:13,819 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:13,859 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:13,910 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:13,994 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:15,368 [INFO   ] RMSE FFT 0.8844691597238715
+2026-08-18 10:47:15,372 [INFO   ] RMSE Savgol 0.5208163483846305
+2026-08-18 10:47:15,374 [DEBUG  ] Savgol
+2026-08-18 10:47:15,394 [INFO   ] [FFT] Bin=2  Fs=-20144.263115-14915.406102j  Fp=-17605.369286-13224.158508j  |Fs|=25065.128677  |Fp|=22018.796423  ∠Fs=-143.483°  ∠Fp=-143.088°
+2026-08-18 10:47:15,398 [INFO   ] [SONDE-D] |Ip|/|Ish|=0.8785  Δφ=+0.394°  Idc: shunt=-32.1 mA  sonde=+59.6 mA
+2026-08-18 10:47:16,838 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:16,918 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:17,001 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:17,077 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:17,130 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:18,479 [INFO   ] RMSE FFT 0.5209857498420849
+2026-08-18 10:47:18,481 [INFO   ] RMSE Savgol 0.39164430396990185
+2026-08-18 10:47:18,486 [DEBUG  ] Savgol
+2026-08-18 10:47:18,506 [INFO   ] [FFT] Bin=2  Fs=-32490.264033-15285.099163j  Fp=-30445.616536-14445.605884j  |Fs|=35906.148684  |Fp|=33698.829292  ∠Fs=-154.805°  ∠Fp=-154.617°
+2026-08-18 10:47:18,510 [INFO   ] [SONDE-D] |Ip|/|Ish|=0.9385  Δφ=+0.188°  Idc: shunt=-32.3 mA  sonde=+57.3 mA
+2026-08-18 10:47:19,659 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:19,745 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:19,778 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:19,872 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:19,946 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:20,025 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:21,439 [INFO   ] RMSE FFT 0.8232855949231855
+2026-08-18 10:47:21,442 [INFO   ] RMSE Savgol 0.522180034380178
+2026-08-18 10:47:21,446 [DEBUG  ] Savgol
+2026-08-18 10:47:21,466 [INFO   ] [FFT] Bin=2  Fs=-34003.906491-24565.736648j  Fp=-35049.902635-25306.704927j  |Fs|=41949.267857  |Fp|=43231.065092  ∠Fs=-144.154°  ∠Fp=-144.170°
+2026-08-18 10:47:21,471 [INFO   ] [SONDE-D] |Ip|/|Ish|=1.0306  Δφ=-0.016°  Idc: shunt=-27.1 mA  sonde=+56.6 mA
+2026-08-18 10:47:22,624 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:22,710 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:22,738 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:22,802 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:22,906 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:22,986 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:24,382 [INFO   ] RMSE FFT 0.717431511868848
+2026-08-18 10:47:24,385 [INFO   ] RMSE Savgol 0.48504115816407495
+2026-08-18 10:47:24,387 [DEBUG  ] Savgol
+2026-08-18 10:47:24,409 [INFO   ] [FFT] Bin=2  Fs=-38104.644617-24249.058868j  Fp=-41261.966736-26167.109264j  |Fs|=45166.146585  |Fp|=48859.671572  ∠Fs=-147.528°  ∠Fp=-147.618°
+2026-08-18 10:47:24,413 [INFO   ] [SONDE-D] |Ip|/|Ish|=1.0818  Δφ=-0.090°  Idc: shunt=-23.7 mA  sonde=+56.2 mA
+2026-08-18 10:47:25,408 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:25,492 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:25,524 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:25,610 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:25,675 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:25,818 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:27,255 [INFO   ] RMSE FFT 0.7077292334621647
+2026-08-18 10:47:27,257 [INFO   ] RMSE Savgol 0.47871945746687766
+2026-08-18 10:47:27,261 [DEBUG  ] Savgol
+2026-08-18 10:47:27,282 [INFO   ] [FFT] Bin=2  Fs=-40463.223970-24106.280342j  Fp=-45070.232882-26726.192655j  |Fs|=47099.737217  |Fp|=52398.618931  ∠Fs=-149.215°  ∠Fp=-149.332°
+2026-08-18 10:47:27,286 [INFO   ] [SONDE-D] |Ip|/|Ish|=1.1125  Δφ=-0.117°  Idc: shunt=-21.5 mA  sonde=+55.9 mA
+2026-08-18 10:47:28,546 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:28,645 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:28,706 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:28,763 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:28,809 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:28,892 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:30,291 [INFO   ] RMSE FFT 0.6176797774572423
+2026-08-18 10:47:30,295 [INFO   ] RMSE Savgol 0.45338521978482427
+2026-08-18 10:47:30,298 [DEBUG  ] Savgol
+2026-08-18 10:47:30,318 [INFO   ] [FFT] Bin=2  Fs=-41875.797750-24112.717410j  Fp=-47560.632078-27195.291696j  |Fs|=48321.895432  |Fp|=54786.837964  ∠Fs=-150.066°  ∠Fp=-150.239°
+2026-08-18 10:47:30,321 [INFO   ] [SONDE-D] |Ip|/|Ish|=1.1338  Δφ=-0.173°  Idc: shunt=-20.1 mA  sonde=+55.3 mA
+2026-08-18 10:47:31,501 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:31,586 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:31,616 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:31,673 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:31,741 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:31,824 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:33,235 [INFO   ] RMSE FFT 0.6211201137607943
+2026-08-18 10:47:33,239 [INFO   ] RMSE Savgol 0.4560818686262875
+2026-08-18 10:47:33,242 [DEBUG  ] Savgol
+2026-08-18 10:47:33,262 [INFO   ] [FFT] Bin=2  Fs=-56249.590276-31049.899286j  Fp=-49203.382019-27566.608184j  |Fs|=64250.390286  |Fp|=56399.385536  ∠Fs=-151.101°  ∠Fp=-150.740°
+2026-08-18 10:47:33,267 [INFO   ] [SONDE-D] |Ip|/|Ish|=0.8778  Δφ=+0.361°  Idc: shunt=-36.5 mA  sonde=+55.6 mA
+2026-08-18 10:47:34,399 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:34,500 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:34,531 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:34,582 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:34,667 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:34,761 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:36,192 [INFO   ] RMSE FFT 0.5921230300461249
+2026-08-18 10:47:36,196 [INFO   ] RMSE Savgol 0.44618725571061957
+2026-08-18 10:47:36,199 [DEBUG  ] Savgol
+2026-08-18 10:47:36,220 [INFO   ] [FFT] Bin=2  Fs=-57498.636339-31153.645350j  Fp=-50304.908862-27696.251240j  |Fs|=65396.045748  |Fp|=57425.309650  ∠Fs=-151.550°  ∠Fp=-151.164°
+2026-08-18 10:47:36,223 [INFO   ] [SONDE-D] |Ip|/|Ish|=0.8781  Δφ=+0.386°  Idc: shunt=-36.8 mA  sonde=+55.3 mA
+2026-08-18 10:47:37,395 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:37,478 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:37,509 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:37,606 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:37,683 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:37,768 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:39,186 [INFO   ] RMSE FFT 0.5837426716996771
+2026-08-18 10:47:39,190 [INFO   ] RMSE Savgol 0.44236354013158335
+2026-08-18 10:47:39,193 [DEBUG  ] Savgol
+2026-08-18 10:47:39,213 [INFO   ] [FFT] Bin=2  Fs=-58231.888410-31454.522072j  Fp=-50942.216219-27957.294360j  |Fs|=66184.135460  |Fp|=58109.549140  ∠Fs=-151.624°  ∠Fp=-151.242°
+2026-08-18 10:47:39,216 [INFO   ] [SONDE-D] |Ip|/|Ish|=0.8780  Δφ=+0.382°  Idc: shunt=-36.6 mA  sonde=+55.3 mA
+2026-08-18 10:47:40,422 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:40,530 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:40,564 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:40,659 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:40,709 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:40,789 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:42,210 [INFO   ] RMSE FFT 0.5957790615275902
+2026-08-18 10:47:42,213 [INFO   ] RMSE Savgol 0.44843987304079813
+2026-08-18 10:47:42,215 [DEBUG  ] Savgol
+2026-08-18 10:47:42,237 [INFO   ] [FFT] Bin=2  Fs=-58795.033966-31498.825683j  Fp=-51430.450974-28026.675532j  |Fs|=66701.064748  |Fp|=58571.203067  ∠Fs=-151.820°  ∠Fp=-151.412°
+2026-08-18 10:47:42,240 [INFO   ] [SONDE-D] |Ip|/|Ish|=0.8781  Δφ=+0.408°  Idc: shunt=-36.9 mA  sonde=+55.0 mA
+2026-08-18 10:47:43,539 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:43,625 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:43,659 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:43,746 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:43,818 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:43,905 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:45,391 [INFO   ] RMSE FFT 0.5914375614780478
+2026-08-18 10:47:45,395 [INFO   ] RMSE Savgol 0.4469872174038294
+2026-08-18 10:47:45,398 [DEBUG  ] Savgol
+2026-08-18 10:47:45,419 [INFO   ] [FFT] Bin=2  Fs=-59241.165736-31429.443834j  Fp=-51804.645674-27954.841371j  |Fs|=67062.102990  |Fp|=58865.902435  ∠Fs=-152.053°  ∠Fp=-151.648°
+2026-08-18 10:47:45,422 [INFO   ] [SONDE-D] |Ip|/|Ish|=0.8778  Δφ=+0.405°  Idc: shunt=-36.8 mA  sonde=+55.1 mA
+2026-08-18 10:47:46,655 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:46,763 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:46,794 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:46,856 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:46,906 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:46,990 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:48,422 [INFO   ] RMSE FFT 0.5790580189665573
+2026-08-18 10:47:48,427 [INFO   ] RMSE Savgol 0.4465717206590251
+2026-08-18 10:47:48,430 [DEBUG  ] Savgol
+2026-08-18 10:47:48,450 [INFO   ] [FFT] Bin=2  Fs=-59576.331869-31441.162835j  Fp=-52130.161950-27974.180699j  |Fs|=67363.833319  |Fp|=59161.715414  ∠Fs=-152.177°  ∠Fp=-151.781°
+2026-08-18 10:47:48,453 [INFO   ] [SONDE-D] |Ip|/|Ish|=0.8782  Δφ=+0.396°  Idc: shunt=-37.0 mA  sonde=+54.9 mA
+2026-08-18 10:47:49,560 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:49,679 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:49,711 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:49,763 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:49,850 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:49,932 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:47:51,371 [INFO   ] RMSE FFT 0.5851696327052001
+2026-08-18 10:47:51,375 [INFO   ] RMSE Savgol 0.44774636160938575
+2026-08-18 10:47:51,378 [DEBUG  ] Savgol
+2026-08-18 10:47:51,398 [INFO   ] [FFT] Bin=2  Fs=-59772.772011-31488.613353j  Fp=-52279.117564-28019.011127j  |Fs|=67559.729461  |Fp|=59314.172993  ∠Fs=-152.220°  ∠Fp=-151.811°
+2026-08-18 10:47:51,401 [INFO   ] [SONDE-D] |Ip|/|Ish|=0.8780  Δφ=+0.409°  Idc: shunt=-37.0 mA  sonde=+54.7 mA
+2026-08-18 10:47:52,148 [INFO   ] ✅ Session enregistrée : ./Logs/2026-08-18_10-47-02_Ferrite Mn-Zn_F25000.0Hz_B0.10T_3C94_HF
+2026-08-18 10:47:52,203 [INFO   ] [PERTES] shunt=37760.2 W/m³   sonde=34745.0 W/m³   écart=-8.0%
+2026-08-18 10:49:07,282 [INFO   ] [SONDE][accept] combo lu = '1'
+2026-08-18 10:49:17,994 [INFO   ] 
+================================================================================
+2026-08-18 10:49:17,997 [INFO   ] VERIFICATION PARAMÈTRES - Affichage des valeurs saisies
+2026-08-18 10:49:17,999 [INFO   ] ================================================================================
+2026-08-18 10:49:18,003 [INFO   ] 
+Paramètre            Valeur          Unité     
+2026-08-18 10:49:18,006 [INFO   ] ---------------------------------------------
+2026-08-18 10:49:18,008 [INFO   ] Hauteur              5.31            mm        
+2026-08-18 10:49:18,011 [INFO   ] Di                   13              mm        
+2026-08-18 10:49:18,015 [INFO   ] De                   22.35           mm        
+2026-08-18 10:49:18,018 [INFO   ] Section              24.82           mm²       
+2026-08-18 10:49:18,020 [INFO   ] Ns1                  10              -         
+2026-08-18 10:49:18,026 [INFO   ] Ns2                  10              -         
+2026-08-18 10:49:18,028 [INFO   ] Rs                   0.92            Ω         
+2026-08-18 10:49:18,032 [INFO   ] Rh                   0.198           Ω         
+2026-08-18 10:49:18,035 [INFO   ] Freq                 25              Hz        
+2026-08-18 10:49:18,039 [INFO   ] Ampli                0.2             V         
+2026-08-18 10:49:18,041 [INFO   ] Gain                 10              -         
+2026-08-18 10:49:18,043 [INFO   ] Nbre_periode         2               -         
+2026-08-18 10:49:18,046 [INFO   ] Nbre_enregist        10              -         
+2026-08-18 10:49:18,051 [INFO   ] mu_r                 2985.13         -         
+2026-08-18 10:49:18,054 [INFO   ] Kf                   1               -         
+2026-08-18 10:49:18,056 [INFO   ] num_samples          5000            -         
+2026-08-18 10:49:18,059 [INFO   ] alpha                0.5             -         
+2026-08-18 10:49:18,063 [INFO   ] beta                 0.5             -         
+2026-08-18 10:49:18,065 [INFO   ] lm                   54.21           mm        
+2026-08-18 10:49:18,068 [INFO   ] gamma                5               -         
+2026-08-18 10:49:18,070 [INFO   ] 
+--------------------------------------------------------------------------------
+2026-08-18 10:49:18,073 [INFO   ] VÉRIFICATION 1: Paramètres manquants (= 0)
+2026-08-18 10:49:18,075 [INFO   ] --------------------------------------------------------------------------------
+2026-08-18 10:49:18,077 [INFO   ] ✓ Tous les paramètres sont renseignés
+2026-08-18 10:49:18,079 [INFO   ] 
+--------------------------------------------------------------------------------
+2026-08-18 10:49:18,081 [INFO   ] VÉRIFICATION 2: Cohérence géométrique
+2026-08-18 10:49:18,083 [INFO   ] --------------------------------------------------------------------------------
+2026-08-18 10:49:18,091 [INFO   ] Di (diamètre intérieur) = 13.0 mm
+2026-08-18 10:49:18,094 [INFO   ] De (diamètre extérieur) = 22.35 mm
+2026-08-18 10:49:18,097 [INFO   ] ✓ De > Di (épaisseur tore = 9.350000000000001 mm)
+2026-08-18 10:49:18,099 [INFO   ] 
+--------------------------------------------------------------------------------
+2026-08-18 10:49:18,103 [INFO   ] VÉRIFICATION 3: Conversion facteur Sonde
+2026-08-18 10:49:18,106 [INFO   ] --------------------------------------------------------------------------------
+2026-08-18 10:49:18,108 [INFO   ] Sonde input: '1' → gain = 1.0 (pas d'atténuation)
+2026-08-18 10:49:18,111 [INFO   ] 
+--------------------------------------------------------------------------------
+2026-08-18 10:49:18,113 [INFO   ] VÉRIFICATION 4: Limite de tension du secondaire V₂
+2026-08-18 10:49:18,116 [INFO   ] --------------------------------------------------------------------------------
+2026-08-18 10:49:18,118 [INFO   ] 
+Formule de Faraday:
+2026-08-18 10:49:18,125 [INFO   ] V₂ = K × Ns2 × S(m²) × Ampli × Freq × √2 × Sonde
+2026-08-18 10:49:18,127 [INFO   ] 
+Où:
+2026-08-18 10:49:18,130 [INFO   ]   K (Faraday)     = 4.44
+2026-08-18 10:49:18,132 [INFO   ]   Ns2 (spires)    = 10
+2026-08-18 10:49:18,135 [INFO   ]   Section (mm²)   = 24.82
+2026-08-18 10:49:18,137 [INFO   ]   Section (m²)    = 2.4820000000e-05
+2026-08-18 10:49:18,144 [INFO   ]   Ampli (V)       = 0.2
+2026-08-18 10:49:18,146 [INFO   ]   Freq (saisie)   = 25.0 kHz
+2026-08-18 10:49:18,149 [INFO   ]   Freq (Hz)       = 25000.0
+2026-08-18 10:49:18,151 [INFO   ]   √2              = 1.414214
+2026-08-18 10:49:18,154 [INFO   ]   Sonde (gain)    = 1.0
+2026-08-18 10:49:18,157 [INFO   ] 
+Calcul pas à pas:
+2026-08-18 10:49:18,159 [INFO   ]   V₂ = 4.44 × 10 × 2.4820000000e-05 × 0.2 × 25000.0 × 1.414214 × 1.0
+2026-08-18 10:49:18,167 [INFO   ] 
+Vérification:
+2026-08-18 10:49:18,169 [INFO   ]   V₂ calculé = 7.792373 V
+2026-08-18 10:49:18,172 [INFO   ]   V₂ limite  = 20.0 V (limite picoscope)
+2026-08-18 10:49:18,177 [INFO   ] ✓ V₂ = 7.792 V < 20.0 V
+2026-08-18 10:49:18,179 [INFO   ]    Marge de sécurité: 61.0%
+2026-08-18 10:49:18,183 [INFO   ] 
+================================================================================
+2026-08-18 10:49:18,188 [INFO   ] BILAN : 0 erreur(s) detectee(s)
+2026-08-18 10:49:18,189 [INFO   ] ================================================================================
+2026-08-18 10:49:18,520 [DEBUG  ] ttyS4 // /dev/ttyS4 // D=n/a
+2026-08-18 10:49:18,524 [DEBUG  ] ttyS31 // /dev/ttyS31 // D=n/a
+2026-08-18 10:49:18,529 [DEBUG  ] ttyS30 // /dev/ttyS30 // D=n/a
+2026-08-18 10:49:18,532 [DEBUG  ] ttyS29 // /dev/ttyS29 // D=n/a
+2026-08-18 10:49:18,535 [DEBUG  ] ttyS28 // /dev/ttyS28 // D=n/a
+2026-08-18 10:49:18,538 [DEBUG  ] ttyS27 // /dev/ttyS27 // D=n/a
+2026-08-18 10:49:18,541 [DEBUG  ] ttyS26 // /dev/ttyS26 // D=n/a
+2026-08-18 10:49:18,548 [DEBUG  ] ttyS25 // /dev/ttyS25 // D=n/a
+2026-08-18 10:49:18,552 [DEBUG  ] ttyS24 // /dev/ttyS24 // D=n/a
+2026-08-18 10:49:18,556 [DEBUG  ] ttyS23 // /dev/ttyS23 // D=n/a
+2026-08-18 10:49:18,558 [DEBUG  ] ttyS22 // /dev/ttyS22 // D=n/a
+2026-08-18 10:49:18,561 [DEBUG  ] ttyS21 // /dev/ttyS21 // D=n/a
+2026-08-18 10:49:18,566 [DEBUG  ] ttyS20 // /dev/ttyS20 // D=n/a
+2026-08-18 10:49:18,568 [DEBUG  ] ttyS19 // /dev/ttyS19 // D=n/a
+2026-08-18 10:49:18,571 [DEBUG  ] ttyS18 // /dev/ttyS18 // D=n/a
+2026-08-18 10:49:18,572 [DEBUG  ] ttyS17 // /dev/ttyS17 // D=n/a
+2026-08-18 10:49:18,575 [DEBUG  ] ttyS16 // /dev/ttyS16 // D=n/a
+2026-08-18 10:49:18,577 [DEBUG  ] ttyS15 // /dev/ttyS15 // D=n/a
+2026-08-18 10:49:18,579 [DEBUG  ] ttyS14 // /dev/ttyS14 // D=n/a
+2026-08-18 10:49:18,582 [DEBUG  ] ttyS13 // /dev/ttyS13 // D=n/a
+2026-08-18 10:49:18,589 [DEBUG  ] ttyS12 // /dev/ttyS12 // D=n/a
+2026-08-18 10:49:18,592 [DEBUG  ] ttyS11 // /dev/ttyS11 // D=n/a
+2026-08-18 10:49:18,595 [DEBUG  ] ttyS10 // /dev/ttyS10 // D=n/a
+2026-08-18 10:49:18,598 [DEBUG  ] ttyS9 // /dev/ttyS9 // D=n/a
+2026-08-18 10:49:18,600 [DEBUG  ] ttyS8 // /dev/ttyS8 // D=n/a
+2026-08-18 10:49:18,604 [DEBUG  ] ttyS7 // /dev/ttyS7 // D=n/a
+2026-08-18 10:49:18,606 [DEBUG  ] ttyS6 // /dev/ttyS6 // D=n/a
+2026-08-18 10:49:18,611 [DEBUG  ] ttyS5 // /dev/ttyS5 // D=n/a
+2026-08-18 10:49:18,613 [DEBUG  ] ttyS3 // /dev/ttyS3 // D=n/a
+2026-08-18 10:49:18,616 [DEBUG  ] ttyS2 // /dev/ttyS2 // D=n/a
+2026-08-18 10:49:18,618 [DEBUG  ] ttyS1 // /dev/ttyS1 // D=n/a
+2026-08-18 10:49:18,621 [DEBUG  ] ttyS0 // /dev/ttyS0 // D=n/a
+2026-08-18 10:49:18,625 [WARNING] Aucun amplificateur detecte : le bouton Output est desactive et les defauts ne seront pas surveilles.
+2026-08-18 10:49:18,627 [INFO   ] mode Simple
+2026-08-18 10:49:18,632 [DEBUG  ] [init] timebase=4 dt=16.000ns spp_init=2500
+2026-08-18 10:49:18,651 [INFO   ] [SONDE] label='1' -> gain de recuperation = 1.0
+2026-08-18 10:49:18,699 [INFO   ] 📁 Logger initialisé : ./Logs/2026-08-18_10-49-18_Ferrite Mn-Zn_F25000.0Hz_B0.20T_3C94_HF
+2026-08-18 10:49:18,707 [INFO   ]    Niveau de trace : Complet (toutes les itérations)
+2026-08-18 10:49:21,717 [WARNING] [AMPLI] AUCUN amplificateur detecte : la surveillance des defauts est INACTIVE pour cette mesure.
+2026-08-18 10:49:22,208 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:23,666 [INFO   ] RMSE FFT 10.840711765420991
+2026-08-18 10:49:23,669 [INFO   ] RMSE Savgol 5.75273266761073
+2026-08-18 10:49:23,673 [DEBUG  ] Savgol
+2026-08-18 10:49:23,692 [INFO   ] [FFT] Bin=2  Fs=-5.699613-289.376364j  Fp=1.911588-190.719599j  |Fs|=289.432489  |Fp|=190.729178  ∠Fs=-91.128°  ∠Fp=-89.426°
+2026-08-18 10:49:23,695 [INFO   ] [SONDE-D] |Ip|/|Ish|=0.6590  Δφ=+1.703°  Idc: shunt=-33.0 mA  sonde=+56.5 mA
+2026-08-18 10:49:24,947 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:26,252 [INFO   ] RMSE FFT 10.497222392030379
+2026-08-18 10:49:26,255 [INFO   ] RMSE Savgol 5.404401926352536
+2026-08-18 10:49:26,258 [DEBUG  ] Savgol
+2026-08-18 10:49:26,279 [INFO   ] [FFT] Bin=2  Fs=12.473016-278.929227j  Fp=8.615414-187.154617j  |Fs|=279.207969  |Fp|=187.352811  ∠Fs=-87.440°  ∠Fp=-87.364°
+2026-08-18 10:49:26,282 [INFO   ] [SONDE-D] |Ip|/|Ish|=0.6710  Δφ=+0.075°  Idc: shunt=-33.1 mA  sonde=+56.2 mA
+2026-08-18 10:49:27,504 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:27,534 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:27,565 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:27,653 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:28,922 [INFO   ] RMSE FFT 0.05125349969439979
+2026-08-18 10:49:28,924 [INFO   ] RMSE Savgol 0.2574544503602183
+2026-08-18 10:49:28,929 [DEBUG  ] FFT
+2026-08-18 10:49:28,952 [INFO   ] [FFT] Bin=2  Fs=-10116.019297-6175.267958j  Fp=-8853.169279-5451.262156j  |Fs|=11851.910427  |Fp|=10396.868056  ∠Fs=-148.598°  ∠Fp=-148.378°
+2026-08-18 10:49:28,955 [INFO   ] [SONDE-D] |Ip|/|Ish|=0.8772  Δφ=+0.221°  Idc: shunt=-33.5 mA  sonde=+55.7 mA
+2026-08-18 10:49:30,095 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:30,181 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:30,214 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:30,266 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:30,346 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:31,719 [INFO   ] RMSE FFT 0.7440474139926551
+2026-08-18 10:49:31,722 [INFO   ] RMSE Savgol 0.47226838098838825
+2026-08-18 10:49:31,725 [DEBUG  ] Savgol
+2026-08-18 10:49:31,745 [INFO   ] [FFT] Bin=2  Fs=-21642.248351-15120.639538j  Fp=-18916.791026-13397.997380j  |Fs|=26401.148720  |Fp|=23180.839426  ∠Fs=-145.059°  ∠Fp=-144.692°
+2026-08-18 10:49:31,749 [INFO   ] [SONDE-D] |Ip|/|Ish|=0.8780  Δφ=+0.368°  Idc: shunt=-34.0 mA  sonde=+55.4 mA
+2026-08-18 10:49:33,080 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:33,167 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:33,201 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:33,286 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:33,364 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:34,849 [INFO   ] RMSE FFT 1.0165200169589286
+2026-08-18 10:49:34,853 [INFO   ] RMSE Savgol 0.6056101954146482
+2026-08-18 10:49:34,856 [DEBUG  ] Savgol
+2026-08-18 10:49:34,880 [INFO   ] [FFT] Bin=2  Fs=-34581.708169-15167.688260j  Fp=-33944.185273-14992.890881j  |Fs|=37761.796925  |Fp|=37107.876398  ∠Fs=-156.318°  ∠Fp=-156.169°
+2026-08-18 10:49:34,883 [INFO   ] [SONDE-D] |Ip|/|Ish|=0.9827  Δφ=+0.148°  Idc: shunt=-32.0 mA  sonde=+52.8 mA
+2026-08-18 10:49:35,980 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:36,102 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:36,143 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:36,193 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:36,289 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:36,385 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:37,805 [INFO   ] RMSE FFT 0.7056301744693554
+2026-08-18 10:49:37,809 [INFO   ] RMSE Savgol 0.5401017514227853
+2026-08-18 10:49:37,811 [DEBUG  ] Savgol
+2026-08-18 10:49:37,832 [INFO   ] [FFT] Bin=2  Fs=-38998.195903-23981.330664j  Fp=-43289.840109-26527.279980j  |Fs|=45781.693985  |Fp|=50771.122105  ∠Fs=-148.411°  ∠Fp=-148.501°
+2026-08-18 10:49:37,835 [INFO   ] [SONDE-D] |Ip|/|Ish|=1.1090  Δφ=-0.090°  Idc: shunt=-23.5 mA  sonde=+52.1 mA
+2026-08-18 10:49:38,868 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:38,994 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:39,064 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:39,126 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:39,180 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:39,266 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:40,748 [INFO   ] RMSE FFT 0.5524929601273585
+2026-08-18 10:49:40,751 [INFO   ] RMSE Savgol 0.5548858380066665
+2026-08-18 10:49:40,754 [DEBUG  ] FFT
+2026-08-18 10:49:40,779 [INFO   ] [FFT] Bin=2  Fs=-61482.783473-32013.104976j  Fp=-53803.072419-28501.087327j  |Fs|=69317.902116  |Fp|=60885.815922  ∠Fs=-152.495°  ∠Fp=-152.089°
+2026-08-18 10:49:40,782 [INFO   ] [SONDE-D] |Ip|/|Ish|=0.8784  Δφ=+0.406°  Idc: shunt=-38.1 mA  sonde=+51.7 mA
+2026-08-18 10:49:42,012 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:42,095 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:42,161 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:42,240 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:42,299 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:42,383 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:43,875 [INFO   ] RMSE FFT 0.4715068396460508
+2026-08-18 10:49:43,878 [INFO   ] RMSE Savgol 0.6257355087758265
+2026-08-18 10:49:43,882 [DEBUG  ] FFT
+2026-08-18 10:49:43,906 [INFO   ] [FFT] Bin=2  Fs=-70796.633506-34018.767179j  Fp=-61938.653935-30317.537696j  |Fs|=78545.781785  |Fp|=68960.495526  ∠Fs=-154.335°  ∠Fp=-153.919°
+2026-08-18 10:49:43,908 [INFO   ] [SONDE-D] |Ip|/|Ish|=0.8780  Δφ=+0.416°  Idc: shunt=-38.9 mA  sonde=+50.8 mA
+2026-08-18 10:49:44,876 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:44,983 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:45,013 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:45,101 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:45,179 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:45,264 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:45,338 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:46,849 [INFO   ] RMSE FFT 0.15224701500419843
+2026-08-18 10:49:46,853 [INFO   ] RMSE Savgol 0.6934776393688912
+2026-08-18 10:49:46,856 [DEBUG  ] FFT
+2026-08-18 10:49:46,880 [INFO   ] [FFT] Bin=2  Fs=-66584.072765-54374.575254j  Fp=-58317.381791-48292.671618j  |Fs|=85965.302187  |Fp|=75717.231533  ∠Fs=-140.764°  ∠Fp=-140.372°
+2026-08-18 10:49:46,884 [INFO   ] [SONDE-D] |Ip|/|Ish|=0.8808  Δφ=+0.392°  Idc: shunt=-39.1 mA  sonde=+49.9 mA
+2026-08-18 10:49:47,923 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:48,037 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:48,118 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:48,177 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:48,224 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:48,321 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:48,371 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:49,880 [INFO   ] RMSE FFT 0.15746541143155557
+2026-08-18 10:49:49,883 [INFO   ] RMSE Savgol 0.7968648349006763
+2026-08-18 10:49:49,886 [DEBUG  ] FFT
+2026-08-18 10:49:49,909 [INFO   ] [FFT] Bin=2  Fs=-72173.597320-55239.568549j  Fp=-64636.272916-49905.397038j  |Fs|=90886.952218  |Fp|=81660.249999  ∠Fs=-142.571°  ∠Fp=-142.328°
+2026-08-18 10:49:49,912 [INFO   ] [SONDE-D] |Ip|/|Ish|=0.8985  Δφ=+0.242°  Idc: shunt=-37.6 mA  sonde=+49.4 mA
+2026-08-18 10:49:50,932 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:51,066 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:51,140 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:51,191 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:51,242 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:51,335 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:51,415 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:52,936 [INFO   ] RMSE FFT 0.155530414267623
+2026-08-18 10:49:52,940 [INFO   ] RMSE Savgol 0.8916703918630118
+2026-08-18 10:49:52,942 [DEBUG  ] FFT
+2026-08-18 10:49:52,966 [INFO   ] [FFT] Bin=2  Fs=-76571.901609-55616.646286j  Fp=-70126.481500-51063.991355j  |Fs|=94638.615058  |Fp|=86748.225461  ∠Fs=-144.008°  ∠Fp=-143.939°
+2026-08-18 10:49:52,970 [INFO   ] [SONDE-D] |Ip|/|Ish|=0.9166  Δφ=+0.069°  Idc: shunt=-36.1 mA  sonde=+49.0 mA
+2026-08-18 10:49:54,199 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:54,332 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:54,391 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:54,455 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:54,504 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:54,588 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:54,637 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:56,159 [INFO   ] RMSE FFT 0.1732087457704683
+2026-08-18 10:49:56,161 [INFO   ] RMSE Savgol 0.9889494487649401
+2026-08-18 10:49:56,166 [DEBUG  ] FFT
+2026-08-18 10:49:56,197 [INFO   ] [FFT] Bin=2  Fs=-79958.330901-56277.089502j  Fp=-74846.203197-52557.034717j  |Fs|=97777.530564  |Fp|=91455.978652  ∠Fs=-144.861°  ∠Fp=-144.923°
+2026-08-18 10:49:56,200 [INFO   ] [SONDE-D] |Ip|/|Ish|=0.9353  Δφ=-0.062°  Idc: shunt=-33.8 mA  sonde=+48.6 mA
+2026-08-18 10:49:57,300 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:57,438 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:57,468 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:57,526 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:57,614 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:57,700 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:57,760 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:49:59,294 [INFO   ] RMSE FFT 0.1699282537334338
+2026-08-18 10:49:59,298 [INFO   ] RMSE Savgol 1.061875336504976
+2026-08-18 10:49:59,301 [DEBUG  ] FFT
+2026-08-18 10:49:59,324 [INFO   ] [FFT] Bin=2  Fs=-82704.083676-56742.703874j  Fp=-78821.300928-53682.668046j  |Fs|=100298.055314  |Fp|=95365.750291  ∠Fs=-145.546°  ∠Fp=-145.742°
+2026-08-18 10:49:59,327 [INFO   ] [SONDE-D] |Ip|/|Ish|=0.9508  Δφ=-0.196°  Idc: shunt=-31.7 mA  sonde=+48.6 mA
+2026-08-18 10:50:00,334 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:00,716 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:00,749 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:00,826 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:00,911 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:00,992 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:01,082 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:02,639 [INFO   ] RMSE FFT 0.14595497026519919
+2026-08-18 10:50:02,643 [INFO   ] RMSE Savgol 1.1295625324217062
+2026-08-18 10:50:02,646 [DEBUG  ] FFT
+2026-08-18 10:50:02,669 [INFO   ] [FFT] Bin=2  Fs=-85108.864755-57190.670342j  Fp=-82254.999282-54623.340641j  |Fs|=102539.219980  |Fp|=98740.033673  ∠Fs=-146.100°  ∠Fp=-146.413°
+2026-08-18 10:50:02,676 [INFO   ] [SONDE-D] |Ip|/|Ish|=0.9629  Δφ=-0.313°  Idc: shunt=-29.8 mA  sonde=+48.7 mA
+2026-08-18 10:50:03,888 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:03,984 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:04,021 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:04,127 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:04,187 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:04,278 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:04,328 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:05,868 [INFO   ] RMSE FFT 0.165046583518532
+2026-08-18 10:50:05,872 [INFO   ] RMSE Savgol 1.1959827237680334
+2026-08-18 10:50:05,875 [DEBUG  ] FFT
+2026-08-18 10:50:05,898 [INFO   ] [FFT] Bin=2  Fs=-87054.052899-57513.744501j  Fp=-85438.145957-55527.248129j  |Fs|=104337.140716  |Fp|=101896.771634  ∠Fs=-146.549°  ∠Fp=-146.980°
+2026-08-18 10:50:05,902 [INFO   ] [SONDE-D] |Ip|/|Ish|=0.9766  Δφ=-0.431°  Idc: shunt=-28.0 mA  sonde=+48.3 mA
+2026-08-18 10:50:06,942 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:07,060 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:07,132 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:07,194 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:07,248 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:07,328 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:07,392 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:08,940 [INFO   ] RMSE FFT 0.1546512923118567
+2026-08-18 10:50:08,943 [INFO   ] RMSE Savgol 1.2512226384202791
+2026-08-18 10:50:08,945 [DEBUG  ] FFT
+2026-08-18 10:50:08,972 [INFO   ] [FFT] Bin=2  Fs=-88806.769437-57760.042383j  Fp=-88106.859929-56164.336704j  |Fs|=105938.023362  |Fp|=104485.652048  ∠Fs=-146.960°  ∠Fp=-147.484°
+2026-08-18 10:50:08,975 [INFO   ] [SONDE-D] |Ip|/|Ish|=0.9863  Δφ=-0.524°  Idc: shunt=-26.4 mA  sonde=+48.1 mA
+2026-08-18 10:50:09,987 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:10,077 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:10,112 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:10,202 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:10,283 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:10,362 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:10,451 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:12,006 [INFO   ] RMSE FFT 0.15704969991690163
+2026-08-18 10:50:12,010 [INFO   ] RMSE Savgol 1.3004557378549209
+2026-08-18 10:50:12,013 [DEBUG  ] FFT
+2026-08-18 10:50:12,037 [INFO   ] [FFT] Bin=2  Fs=-90172.476827-58141.193491j  Fp=-90432.945976-56957.228942j  |Fs|=107291.537214  |Fp|=106874.897177  ∠Fs=-147.187°  ∠Fp=-147.796°
+2026-08-18 10:50:12,040 [INFO   ] [SONDE-D] |Ip|/|Ish|=0.9961  Δφ=-0.609°  Idc: shunt=-25.1 mA  sonde=+47.9 mA
+2026-08-18 10:50:13,101 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:13,215 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:13,292 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:13,347 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:13,396 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:13,488 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:13,547 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:15,120 [INFO   ] RMSE FFT 0.1605138597838673
+2026-08-18 10:50:15,124 [INFO   ] RMSE Savgol 1.3461582429844219
+2026-08-18 10:50:15,126 [DEBUG  ] FFT
+2026-08-18 10:50:15,150 [INFO   ] [FFT] Bin=2  Fs=-91540.318750-58255.588256j  Fp=-92591.840644-57434.507656j  |Fs|=108505.039145  |Fp|=108958.577558  ∠Fs=-147.528°  ∠Fp=-148.189°
+2026-08-18 10:50:15,153 [INFO   ] [SONDE-D] |Ip|/|Ish|=1.0042  Δφ=-0.661°  Idc: shunt=-24.0 mA  sonde=+47.8 mA
+2026-08-18 10:50:16,505 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:16,600 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:16,637 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:16,694 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:16,741 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:16,819 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:16,867 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:18,442 [INFO   ] RMSE FFT 0.17525701270125468
+2026-08-18 10:50:18,446 [INFO   ] RMSE Savgol 1.3872320782239873
+2026-08-18 10:50:18,448 [DEBUG  ] FFT
+2026-08-18 10:50:18,474 [INFO   ] [FFT] Bin=2  Fs=-92624.193542-58524.752363j  Fp=-94397.396772-57992.086520j  |Fs|=109564.537458  |Fp|=110787.863127  ∠Fs=-147.713°  ∠Fp=-148.436°
+2026-08-18 10:50:18,478 [INFO   ] [SONDE-D] |Ip|/|Ish|=1.0112  Δφ=-0.723°  Idc: shunt=-22.7 mA  sonde=+47.6 mA
+2026-08-18 10:50:19,557 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:19,666 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:19,737 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:19,791 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:19,844 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:19,937 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:20,021 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:21,619 [INFO   ] RMSE FFT 0.20899205331888876
+2026-08-18 10:50:21,623 [INFO   ] RMSE Savgol 1.4277446038111712
+2026-08-18 10:50:21,625 [DEBUG  ] FFT
+2026-08-18 10:50:21,650 [INFO   ] [FFT] Bin=2  Fs=-93417.474462-58865.915123j  Fp=-95888.449718-58611.721836j  |Fs|=110417.482756  |Fp|=112382.955674  ∠Fs=-147.783°  ∠Fp=-148.565°
+2026-08-18 10:50:21,653 [INFO   ] [SONDE-D] |Ip|/|Ish|=1.0178  Δφ=-0.781°  Idc: shunt=-22.1 mA  sonde=+47.2 mA
+2026-08-18 10:50:22,804 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:22,894 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:22,927 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:22,983 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:23,078 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:23,161 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:23,214 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:24,787 [INFO   ] RMSE FFT 0.19204349947312926
+2026-08-18 10:50:24,791 [INFO   ] RMSE Savgol 1.4525568193893712
+2026-08-18 10:50:24,793 [DEBUG  ] FFT
+2026-08-18 10:50:24,819 [INFO   ] [FFT] Bin=2  Fs=-94393.782162-58885.308262j  Fp=-97381.078258-58804.050982j  |Fs|=111254.957822  |Fp|=113758.475792  ∠Fs=-148.043°  ∠Fp=-148.874°
+2026-08-18 10:50:24,823 [INFO   ] [SONDE-D] |Ip|/|Ish|=1.0225  Δφ=-0.831°  Idc: shunt=-21.1 mA  sonde=+46.9 mA
+2026-08-18 10:50:25,876 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:25,997 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:26,050 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:26,114 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:26,168 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:26,259 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:26,333 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:27,956 [INFO   ] RMSE FFT 0.20396986383618967
+2026-08-18 10:50:27,959 [INFO   ] RMSE Savgol 1.4797449180044795
+2026-08-18 10:50:27,963 [DEBUG  ] FFT
+2026-08-18 10:50:27,992 [INFO   ] [FFT] Bin=2  Fs=-95087.278546-59089.293628j  Fp=-98511.837915-59196.482469j  |Fs|=111951.485755  |Fp|=114929.568632  ∠Fs=-148.142°  ∠Fp=-148.998°
+2026-08-18 10:50:27,996 [INFO   ] [SONDE-D] |Ip|/|Ish|=1.0266  Δφ=-0.856°  Idc: shunt=-20.3 mA  sonde=+46.8 mA
+2026-08-18 10:50:29,329 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:29,453 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:29,533 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:29,585 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:29,634 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:29,725 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:29,788 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:31,387 [INFO   ] RMSE FFT 0.2229487729033051
+2026-08-18 10:50:31,392 [INFO   ] RMSE Savgol 1.501874907259077
+2026-08-18 10:50:31,396 [DEBUG  ] FFT
+2026-08-18 10:50:31,419 [INFO   ] [FFT] Bin=2  Fs=-95631.809260-59186.306001j  Fp=-99480.535624-59437.045898j  |Fs|=112465.380275  |Fp|=115884.163685  ∠Fs=-148.247°  ∠Fp=-149.143°
+2026-08-18 10:50:31,422 [INFO   ] [SONDE-D] |Ip|/|Ish|=1.0304  Δφ=-0.896°  Idc: shunt=-19.9 mA  sonde=+46.8 mA
+2026-08-18 10:50:32,723 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:32,853 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:32,895 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:32,947 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:32,995 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:33,075 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:33,124 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:34,788 [INFO   ] RMSE FFT 0.21403364984562906
+2026-08-18 10:50:34,792 [INFO   ] RMSE Savgol 1.5190819425905278
+2026-08-18 10:50:34,794 [DEBUG  ] FFT
+2026-08-18 10:50:34,818 [INFO   ] [FFT] Bin=2  Fs=-114708.854489-66962.423757j  Fp=-100429.973717-59542.860517j  |Fs|=132823.520107  |Fp|=116754.151358  ∠Fs=-149.725°  ∠Fp=-149.337°
+2026-08-18 10:50:34,820 [INFO   ] [SONDE-D] |Ip|/|Ish|=0.8790  Δφ=+0.388°  Idc: shunt=-40.9 mA  sonde=+46.8 mA
+2026-08-18 10:50:36,027 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:36,135 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:36,163 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:36,254 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:36,323 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:36,408 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:36,454 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:38,117 [INFO   ] RMSE FFT 0.18374088294464558
+2026-08-18 10:50:38,120 [INFO   ] RMSE Savgol 1.5358385396348575
+2026-08-18 10:50:38,123 [DEBUG  ] FFT
+2026-08-18 10:50:38,146 [INFO   ] [FFT] Bin=2  Fs=-115607.108098-67290.198010j  Fp=-101159.657503-59763.135180j  |Fs|=133764.622345  |Fp|=117494.291916  ∠Fs=-149.798°  ∠Fp=-149.426°
+2026-08-18 10:50:38,150 [INFO   ] [SONDE-D] |Ip|/|Ish|=0.8784  Δφ=+0.372°  Idc: shunt=-41.1 mA  sonde=+46.6 mA
+2026-08-18 10:50:39,375 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:39,455 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:39,528 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:39,606 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:39,655 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:39,736 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:39,788 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:41,450 [INFO   ] RMSE FFT 0.18588467985328994
+2026-08-18 10:50:41,454 [INFO   ] RMSE Savgol 1.5526802296606013
+2026-08-18 10:50:41,456 [DEBUG  ] FFT
+2026-08-18 10:50:41,489 [INFO   ] [FFT] Bin=2  Fs=-116117.493005-67596.734161j  Fp=-101764.055059-60106.122835j  |Fs|=134359.929485  |Fp|=118189.123460  ∠Fs=-149.795°  ∠Fp=-149.432°
+2026-08-18 10:50:41,493 [INFO   ] [SONDE-D] |Ip|/|Ish|=0.8796  Δφ=+0.362°  Idc: shunt=-41.0 mA  sonde=+46.3 mA
+2026-08-18 10:50:42,735 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:42,817 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:42,883 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:42,964 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:43,020 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:43,101 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:43,149 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:44,835 [INFO   ] RMSE FFT 0.21061806084369633
+2026-08-18 10:50:44,839 [INFO   ] RMSE Savgol 1.571800159262637
+2026-08-18 10:50:44,842 [DEBUG  ] FFT
+2026-08-18 10:50:44,867 [INFO   ] [FFT] Bin=2  Fs=-117160.924972-67898.253425j  Fp=-102388.116085-60219.539520j  |Fs|=135413.644654  |Fp|=118784.339269  ∠Fs=-149.906°  ∠Fp=-149.538°
+2026-08-18 10:50:44,870 [INFO   ] [SONDE-D] |Ip|/|Ish|=0.8772  Δφ=+0.368°  Idc: shunt=-41.6 mA  sonde=+45.9 mA
+2026-08-18 10:50:45,793 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:45,908 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:45,969 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:46,026 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:46,117 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:46,214 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:46,265 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:48,007 [INFO   ] RMSE FFT 0.19824330646238253
+2026-08-18 10:50:48,011 [INFO   ] RMSE Savgol 1.5847041583980204
+2026-08-18 10:50:48,014 [DEBUG  ] FFT
+2026-08-18 10:50:48,039 [INFO   ] [FFT] Bin=2  Fs=-117780.085869-68098.036450j  Fp=-102943.944952-60399.532676j  |Fs|=136049.590943  |Fp|=119354.762577  ∠Fs=-149.964°  ∠Fp=-149.599°
+2026-08-18 10:50:48,043 [INFO   ] [SONDE-D] |Ip|/|Ish|=0.8773  Δφ=+0.365°  Idc: shunt=-41.6 mA  sonde=+46.0 mA
+2026-08-18 10:50:49,270 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:49,350 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:49,385 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:49,518 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:49,572 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:49,657 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:49,703 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:51,374 [INFO   ] RMSE FFT 0.19436502622691676
+2026-08-18 10:50:51,378 [INFO   ] RMSE Savgol 1.5900715613916188
+2026-08-18 10:50:51,380 [DEBUG  ] FFT
+2026-08-18 10:50:51,405 [INFO   ] [FFT] Bin=2  Fs=-118324.796554-68206.796188j  Fp=-103424.396074-60507.137371j  |Fs|=136575.709867  |Fp|=119823.701229  ∠Fs=-150.039°  ∠Fp=-149.671°
+2026-08-18 10:50:51,408 [INFO   ] [SONDE-D] |Ip|/|Ish|=0.8773  Δφ=+0.368°  Idc: shunt=-41.7 mA  sonde=+45.9 mA
+2026-08-18 10:50:52,427 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:52,518 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:52,555 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:52,626 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:52,726 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:52,813 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:52,900 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:54,606 [INFO   ] RMSE FFT 0.19492907086725234
+2026-08-18 10:50:54,610 [INFO   ] RMSE Savgol 1.594661574487445
+2026-08-18 10:50:54,612 [DEBUG  ] FFT
+2026-08-18 10:50:54,636 [INFO   ] [FFT] Bin=2  Fs=-118305.782489-68153.483547j  Fp=-103639.767113-60548.229320j  |Fs|=136532.616945  |Fp|=120030.368662  ∠Fs=-150.055°  ∠Fp=-149.706°
+2026-08-18 10:50:54,639 [INFO   ] [SONDE-D] |Ip|/|Ish|=0.8791  Δφ=+0.349°  Idc: shunt=-41.2 mA  sonde=+46.0 mA
+2026-08-18 10:50:55,801 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:55,886 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:55,919 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:55,971 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:56,063 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:56,147 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:56,212 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:57,889 [INFO   ] RMSE FFT 0.2240578855906282
+2026-08-18 10:50:57,892 [INFO   ] RMSE Savgol 1.600385161843214
+2026-08-18 10:50:57,895 [DEBUG  ] FFT
+2026-08-18 10:50:57,919 [INFO   ] [FFT] Bin=2  Fs=-118733.580790-67983.583347j  Fp=-103993.145718-60417.433364j  |Fs|=136818.970950  |Fp|=120269.865763  ∠Fs=-150.206°  ∠Fp=-149.844°
+2026-08-18 10:50:57,922 [INFO   ] [SONDE-D] |Ip|/|Ish|=0.8790  Δφ=+0.361°  Idc: shunt=-41.6 mA  sonde=+45.8 mA
+2026-08-18 10:50:59,412 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:59,499 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:59,530 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:59,587 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:59,683 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:59,770 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:50:59,827 [DEBUG  ] [acq] Freq=25000.0Hz timebase=4 dt=16.000ns samples_per_period=2500 maxSamples=5000 N_periodes=2.000000
+2026-08-18 10:51:01,492 [INFO   ] RMSE FFT 0.2030793577612616
+2026-08-18 10:51:01,496 [INFO   ] RMSE Savgol 1.6059953710499941
+2026-08-18 10:51:01,498 [DEBUG  ] FFT
+2026-08-18 10:51:01,523 [INFO   ] [FFT] Bin=2  Fs=-118981.674378-68189.046306j  Fp=-104200.003268-60600.059006j  |Fs|=137136.373271  |Fp|=120540.482132  ∠Fs=-150.183°  ∠Fp=-149.819°
+2026-08-18 10:51:01,526 [INFO   ] [SONDE-D] |Ip|/|Ish|=0.8790  Δφ=+0.364°  Idc: shunt=-41.5 mA  sonde=+45.6 mA
+2026-08-18 10:51:02,349 [INFO   ] ✅ Session enregistrée : ./Logs/2026-08-18_10-49-18_Ferrite Mn-Zn_F25000.0Hz_B0.20T_3C94_HF
+2026-08-18 10:51:02,365 [INFO   ] [PERTES] shunt=182780.1 W/m³   sonde=165733.7 W/m³   écart=-9.3%
+2026-08-18 10:53:11,417 [INFO   ] [SONDE][accept] combo lu = '1'
+2026-08-18 11:22:02,406 [INFO   ] Erreur arrêt Temperature : 'builtin_function_or_method' object has no attribute 'isRunning'
+2026-08-18 15:06:53,496 [INFO   ] Erreur arrêt Temperature : 'builtin_function_or_method' object has no attribute 'isRunning'
+2026-08-18 15:08:27,244 [INFO   ] ttyS4 // /dev/ttyS4 // D=n/a
+2026-08-18 15:08:27,245 [INFO   ] ttyS31 // /dev/ttyS31 // D=n/a
+2026-08-18 15:08:27,245 [INFO   ] ttyS30 // /dev/ttyS30 // D=n/a
+2026-08-18 15:08:27,245 [INFO   ] ttyS29 // /dev/ttyS29 // D=n/a
+2026-08-18 15:08:27,245 [INFO   ] ttyS28 // /dev/ttyS28 // D=n/a
+2026-08-18 15:08:27,246 [INFO   ] ttyS27 // /dev/ttyS27 // D=n/a
+2026-08-18 15:08:27,246 [INFO   ] ttyS26 // /dev/ttyS26 // D=n/a
+2026-08-18 15:08:27,246 [INFO   ] ttyS25 // /dev/ttyS25 // D=n/a
+2026-08-18 15:08:27,246 [INFO   ] ttyS24 // /dev/ttyS24 // D=n/a
+2026-08-18 15:08:27,246 [INFO   ] ttyS23 // /dev/ttyS23 // D=n/a
+2026-08-18 15:08:27,246 [INFO   ] ttyS22 // /dev/ttyS22 // D=n/a
+2026-08-18 15:08:27,247 [INFO   ] ttyS21 // /dev/ttyS21 // D=n/a
+2026-08-18 15:08:27,247 [INFO   ] ttyS20 // /dev/ttyS20 // D=n/a
+2026-08-18 15:08:27,247 [INFO   ] ttyS19 // /dev/ttyS19 // D=n/a
+2026-08-18 15:08:27,247 [INFO   ] ttyS18 // /dev/ttyS18 // D=n/a
+2026-08-18 15:08:27,247 [INFO   ] ttyS17 // /dev/ttyS17 // D=n/a
+2026-08-18 15:08:27,248 [INFO   ] ttyS16 // /dev/ttyS16 // D=n/a
+2026-08-18 15:08:27,248 [INFO   ] ttyS15 // /dev/ttyS15 // D=n/a
+2026-08-18 15:08:27,248 [INFO   ] ttyS14 // /dev/ttyS14 // D=n/a
+2026-08-18 15:08:27,248 [INFO   ] ttyS13 // /dev/ttyS13 // D=n/a
+2026-08-18 15:08:27,248 [INFO   ] ttyS12 // /dev/ttyS12 // D=n/a
+2026-08-18 15:08:27,249 [INFO   ] ttyS11 // /dev/ttyS11 // D=n/a
+2026-08-18 15:08:27,249 [INFO   ] ttyS10 // /dev/ttyS10 // D=n/a
+2026-08-18 15:08:27,249 [INFO   ] ttyS9 // /dev/ttyS9 // D=n/a
+2026-08-18 15:08:27,249 [INFO   ] ttyS8 // /dev/ttyS8 // D=n/a
+2026-08-18 15:08:27,249 [INFO   ] ttyS7 // /dev/ttyS7 // D=n/a
+2026-08-18 15:08:27,250 [INFO   ] ttyS6 // /dev/ttyS6 // D=n/a
+2026-08-18 15:08:27,250 [INFO   ] ttyS5 // /dev/ttyS5 // D=n/a
+2026-08-18 15:08:27,250 [INFO   ] ttyS3 // /dev/ttyS3 // D=n/a
+2026-08-18 15:08:27,250 [INFO   ] ttyS2 // /dev/ttyS2 // D=n/a
+2026-08-18 15:08:27,250 [INFO   ] ttyS1 // /dev/ttyS1 // D=n/a
+2026-08-18 15:08:27,251 [INFO   ] ttyS0 // /dev/ttyS0 // D=n/a
+2026-08-18 15:08:37,572 [INFO   ] Erreur arrêt Temperature : 'builtin_function_or_method' object has no attribute 'isRunning'
+2026-08-18 15:12:16,537 [INFO   ] [SONDE][accept] combo lu = '1'
+2026-08-18 15:12:27,817 [DEBUG  ] Verbosite console reglee sur : Normal
+2026-08-18 15:12:27,817 [INFO   ] [REGLAGES] sonde D = False, traces = Standard (itération finale), console = Normal
+2026-08-18 15:16:05,988 [DEBUG  ] Verbosite console reglee sur : Normal
+2026-08-18 15:16:05,989 [INFO   ] [REGLAGES] sonde D = False, traces = Standard (itération finale), console = Normal
+2026-08-18 15:16:21,723 [INFO   ] Erreur arrêt Temperature : 'builtin_function_or_method' object has no attribute 'isRunning'
+2026-08-18 15:19:23,815 [DEBUG  ] Verbosite console reglee sur : Normal
+2026-08-18 15:19:23,816 [INFO   ] [REGLAGES] sonde D = False, traces = Standard (itération finale), console = Normal

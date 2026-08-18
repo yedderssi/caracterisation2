@@ -1,0 +1,3 @@
+{
+    "files": ["error.ui","dialog.ui","mainwindow.ui","error.h","pertesvsfreq.h","error.cpp","pertesvsfreq.cpp","widget.py","pertesvsfreq.ui","ampli.h","ampli.cpp","ampli.ui"]
+}
